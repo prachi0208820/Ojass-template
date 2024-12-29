@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            height: 200vh; 
+            position: relative;
+            color: white;
+        }
+        .background-image {
+            background-image: url('https://mctalenthunt.com/wp-content/uploads/2021/04/5-Ways-to-Improve-Your-Technical-Skill-1000x500.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9; 
+            z-index: -1;
+        }
+        .overlay {
+            background-color: rgba(17, 11, 11, 0.7); 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .overlay-image {
+            position: relative;
+            width: 282px;
+            height: auto;
+            margin: 20px 0;
+            opacity:0.8;
+        }
+        .navigation {
+            font-size: 20px;
+            display: flex;
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 34px 23px;
+        }
+        li {
+            padding: 0 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">
+                    <a href="https://www.instagram.com/ojass.nitjsr/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.facebook.com/ojassnitjamshedpur/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.youtube.com/@ojass.nitjsr/" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.linkedin.com/in/ojassnitjsr/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Greetings from OJASS '25</h1>
+        <img src="https://www.rikon.ie/wp-content/uploads/2016/12/Innovation-Communications-Technology-2.jpg" alt="Overlay Image" class="overlay-image">
+        <p>
+            Ojass is the annual techno-management fest of NIT Jamshedpur, celebrated with great enthusiasm and energy. Renowned as one of the premier technical festivals in India, it serves as a vibrant platform for students to showcase their skills, creativity, and technical expertise. With a diverse array of events spanning robotics, coding, entrepreneurship, design, and more, Ojass fosters innovation and learning while encouraging healthy competition among participants. The fest also features workshops, expert talks, and cultural programs, making it a blend of knowledge and entertainment. By attracting students from across the nation, Ojass exemplifies the spirit of teamwork, ingenuity, and excellence, reinforcing NIT Jamshedpur’s reputation as a hub of academic brilliance.
+        </p>
+    </section>
+</body>
+</html>
